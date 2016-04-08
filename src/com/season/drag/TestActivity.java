@@ -26,7 +26,7 @@ import com.season.drag2.R;
 
 public class TestActivity extends Activity implements OnItemClickListener{ 
 	private int NUM_COLUMNS = 3;
-	private int NUM_ITEMS = 8;
+	private int NUM_LINES = 6;
 	private DragScrollView mContainer;  
 	private TextView mPageView;
 	@Override
@@ -51,19 +51,19 @@ public class TestActivity extends Activity implements OnItemClickListener{
 			
 			@Override
 			public int getColumnNumber() {
-				// TODO Auto-generated method stub
+				
 				return NUM_COLUMNS;
 			}
 			
 			@Override
 			public DragAdapter<PackageInfo> getAdapter(List<PackageInfo> data) {
-				// TODO Auto-generated method stub
+				
 				return (DragAdapter<PackageInfo>) new TestAdapter(TestActivity.this, data);
 			}
 
 			@Override
 			public DragGridView<PackageInfo> getItemView() {
-				// TODO Auto-generated method stub
+				
 				@SuppressWarnings("unchecked")
 				DragGridView<PackageInfo> view = (DragGridView<PackageInfo>) LayoutInflater.from(getApplicationContext()).inflate(R.layout.layout_main, null);
 				view.setOnItemClickListener(TestActivity.this);
@@ -72,8 +72,8 @@ public class TestActivity extends Activity implements OnItemClickListener{
 
 			@Override
 			public int getLineNumber() {
-				// TODO Auto-generated method stub
-				return 8;
+				
+				return NUM_LINES;
 			}
 		});
 	} 
@@ -100,7 +100,7 @@ public class TestActivity extends Activity implements OnItemClickListener{
 	}
 	@Override
 	public void onBackPressed() {
-		// TODO Auto-generated method stub
+		
 		if(DragController.getInstance().cancelDragMode()){
 			super.onBackPressed();
 		} 
@@ -108,7 +108,7 @@ public class TestActivity extends Activity implements OnItemClickListener{
 
 	@Override
 	protected void onDestroy() {
-		// TODO Auto-generated method stub
+		
 		super.onDestroy();
 		DragController.getInstance().clear();
 	}
@@ -116,7 +116,7 @@ public class TestActivity extends Activity implements OnItemClickListener{
 	
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-		// TODO Auto-generated method stu
+		 
 		Toast.makeText(TestActivity.this, ""+arg2, Toast.LENGTH_SHORT).show();
 		try { 
 			Uri uri = Uri.parse("weixin://qr/NnUxKR-E_kKFrVtK9yAk");

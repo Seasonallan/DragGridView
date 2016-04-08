@@ -17,11 +17,14 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Scroller;
- 
-
+  
 /**
- * 仿Launcher中的WorkSapce，可以左右滑动切换屏幕的�? * 
- * @author Yao.GUET blog: http://blog.csdn.net/Yao_GUET date: 2011-05-04
+ * 
+/** 
+ * 仿Launcher中的WorkSapce，可以左右滑动切换屏幕
+ * @author SeasonAllan
+ * 
+ * @param <T>
  */
 public class DragScrollView extends ViewGroup implements IDragListener {
  
@@ -416,7 +419,7 @@ public class DragScrollView extends ViewGroup implements IDragListener {
 	
 	@Override
 	public void onDragViewCreate(int page, ViewGroup itemView , MotionEvent event) {
-		// TODO Auto-generated method stub 
+		
 		mLongClickEvent = event;
 		mLongClickEvent.setAction(MotionEvent.ACTION_DOWN);
 		int x = (int)event.getRawX();
@@ -436,62 +439,62 @@ public class DragScrollView extends ViewGroup implements IDragListener {
 
 	@Override
 	public void onDragViewDestroy(int page, MotionEvent event) {
-		// TODO Auto-generated method stub 
+		
 		mLongClickEvent = null;
 	}
 
 	@Override
 	public void onItemMove(int page, MotionEvent event) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onPageChange(int lastPage, int currentPage) {
-		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public <T> void onPageChangeRemoveDragItem(int lastPage, int currentPage,
 			T object) {
-		// TODO Auto-generated method stub
+		
 		
 	}
  
 	@Override
 	public <T> void onPageChangeReplaceFirstItem(int lastPage,
 			int currentPage, T object) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onPageChangeFinish() {
-		// TODO Auto-generated method stub
+		
 		mDragLock = false;
 	}
 
 	@Override
 	public void onDragEnable() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onDragDisable() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onItemDelete(int page, int position) {
-		// TODO Auto-generated method stub
+		
 		mDragController.notifyDeleteItemInPage(getChildCount() -1, getChildCount() -1, page, position, null);
 	}
 
 	@Override
 	public <T> void onItemDelete(int totalPage, int page, int removePage,  int position, T object) {
-		// TODO Auto-generated method stub
+		
 		if(totalPage < 0){
 			if(page > 0){
 				if(getChildCount() > 1)

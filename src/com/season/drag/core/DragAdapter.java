@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 /**
  * 所有隔离带view的视图适配器
  * 
- * @author ziv
+ * @author SeasonAllan
  * 
  * @param <T>
  */

@@ -16,13 +16,9 @@ import com.season.drag.core.DragAdapter;
 import com.season.drag2.R;
 
 public class TestAdapter extends DragAdapter<PackageInfo> implements OnClickListener {
-
-	private ImageView iconView;
-	private TextView txtAge;
-
+ 
 	public TestAdapter(Context mContext, List<PackageInfo> list) {
-		super(mContext, list);
-		// TODO Auto-generated constructor stub
+		super(mContext, list); 
 	} 
 
 
@@ -40,7 +36,7 @@ public class TestAdapter extends DragAdapter<PackageInfo> implements OnClickList
 	
 	@Override
 	public View getView(int position) {
-		// TODO Auto-generated method stub
+		
 		View convertView = LayoutInflater.from(context).inflate(
 				R.layout.griditem_main, null);
 
@@ -67,7 +63,7 @@ public class TestAdapter extends DragAdapter<PackageInfo> implements OnClickList
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+		
 		if(v.getId() == R.id.imageView_del){
 			int position = (Integer) v.getTag();
 			deleteItemInPage(position);

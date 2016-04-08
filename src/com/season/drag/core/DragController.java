@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 /**
  * 拖动控制器
  * 
- * @author ziv
+ * @author SeasonAllan
  * 
  */
 public class DragController {

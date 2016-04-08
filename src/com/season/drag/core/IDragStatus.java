@@ -2,7 +2,7 @@ package com.season.drag.core;
 
 /**
  * 滑动状态
- * @author ziv
+ * @author SeasonAllan
  *
  */
 public interface IDragStatus {

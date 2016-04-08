@@ -17,7 +17,7 @@ public class PageEdgeController {
 	private List<Integer> mCountRecord;
 
 	public PageEdgeController(int fullWidth, int margin) {
-		// TODO Auto-generated constructor stub
+		
 		this.mCountRecord = new ArrayList<Integer>();
 		this.isSleeping = false;
 		this.mFullWidth = fullWidth;
@@ -29,7 +29,7 @@ public class PageEdgeController {
 
 		@Override
 		public void handleMessage(Message msg) {
-			// TODO Auto-generated method stub
+			
 			super.handleMessage(msg);
 			isSleeping = false;
 		}

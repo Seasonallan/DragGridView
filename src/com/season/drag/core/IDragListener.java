@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 /**
  * 滑动监听器
  * 
- * @author ziv
+ * @author SeasonAllan
  * @param <T>
  * 
  */

@@ -158,7 +158,7 @@ public class DragGridView<T> extends GridView implements IDragListener{
 			
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
+				
 			}
 		});
 	}
@@ -169,14 +169,14 @@ public class DragGridView<T> extends GridView implements IDragListener{
 
 	@Override
 	public void onDragViewDestroy(int page, MotionEvent event) {
-		// TODO Auto-generated method stub
+		
 		if(page == mCurrentPage)
 			showDropAnimation(event); 
 	}
 
 	@Override
 	public void onItemMove(int page, MotionEvent event) {
-		// TODO Auto-generated method stub
+		
 		if(page == mCurrentPage){
 			onItemsMove(event);
 		}
@@ -184,7 +184,7 @@ public class DragGridView<T> extends GridView implements IDragListener{
 	
 	@Override
 	public void onPageChange(int lastPage, int currentPage) {
-		// TODO Auto-generated method stub
+		
 		if(lastPage == mCurrentPage){//添加数据到该页尾部 
 			getGridAdapter().setMovingState(false); 
 			stopDragThread();
@@ -202,7 +202,7 @@ public class DragGridView<T> extends GridView implements IDragListener{
 	@Override
 	public <T> void onPageChangeRemoveDragItem(int lastPage, int currentPage,
 			T object) {
-		// TODO Auto-generated method stub
+		
 		if(lastPage == mCurrentPage){//添加数据到该页尾部
 			 
 		}else if(currentPage == mCurrentPage){//移除该页第一【或最后一个】项到上一个页面
@@ -216,7 +216,7 @@ public class DragGridView<T> extends GridView implements IDragListener{
 	@Override
 	public <T> void onPageChangeReplaceFirstItem(int lastPage,
 			int currentPage, T object) {
-		// TODO Auto-generated method stub
+		
 		if(lastPage == mCurrentPage){//添加数据到该页尾部 
 			getGridAdapter().add((lastPage < currentPage? getGridAdapter().getCount() :0), object);
 			adapterDataSetChangedNotify();
@@ -237,25 +237,25 @@ public class DragGridView<T> extends GridView implements IDragListener{
 
 	@Override
 	public void onPageChangeFinish() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onDragEnable() {
-		// TODO Auto-generated method stub
+		
 		getGridAdapter().enableDrag();
 	}
 
 	@Override
 	public void onDragDisable() {
-		// TODO Auto-generated method stub
+		
 		getGridAdapter().disableDrag();
 	}
 
 	@Override
 	public void onItemDelete(int page, int position) {
-		// TODO Auto-generated method stub 
+		 
 	}
  
  
@@ -291,13 +291,13 @@ public class DragGridView<T> extends GridView implements IDragListener{
 
 			@Override
 			public void onAnimationRepeat(Animation animation) {
-				// TODO Auto-generated method stub
+				
 				
 			}
 
 			@Override
 			public void onAnimationStart(Animation animation) {
-				// TODO Auto-generated method stub
+				
 				
 			}
 			
@@ -308,7 +308,7 @@ public class DragGridView<T> extends GridView implements IDragListener{
 	@SuppressWarnings("hiding")
 	@Override
 	public <T> void onItemDelete(int totalPage, int page, int removePage,  int position, T object) {
-		// TODO Auto-generated method stub
+		
 		if(totalPage >= 0){ 
 			if(mCurrentPage == page){
 				if(page == removePage){//当前页面 执行移位操作

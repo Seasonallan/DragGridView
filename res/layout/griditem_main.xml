@@ -25,6 +25,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/imageView_ItemImage"
             android:textColor="#fff"
+            android:singleLine="true"
             android:textSize="18sp" >
         </TextView>
     </RelativeLayout>
