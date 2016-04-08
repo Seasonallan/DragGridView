@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"  >
+
+    <com.season.drag.core.MulDragGridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" 
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:listSelector="@drawable/bg_transparent"
+        android:numColumns="3"
+        android:scrollbars="vertical"   />
+
+</RelativeLayout>
