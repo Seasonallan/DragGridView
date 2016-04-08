@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="grid_padding">48dp</dimen>
+    
+    <dimen name="top_height">46dp</dimen>
+    
+    <dimen name="grid_space">2dp</dimen>
+    
+    <dimen name="normal_size">16dp</dimen>
+    <dimen name="biger_size">20dp</dimen>
+    <dimen name="big_size">18dp</dimen>
+    <dimen name="small_size">14dp</dimen>
+    <dimen name="smaller_size">12dp</dimen>
+    
+    
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+</resources>
