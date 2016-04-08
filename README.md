@@ -1,3 +1,4 @@
 # DragGridView
 An Android DragGridView demo
-changes
+
+Android多页面拖拽GridView效果

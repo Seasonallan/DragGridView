@@ -181,7 +181,7 @@ public abstract class DragAdapter<T> extends BaseAdapter {
 	 * 开启拖拽功能
 	 */
 	public void enableDrag() {
-		// TODO Auto-generated method stub
+		
 		mDraging = true; 
 		notifyDataSetChanged();
 	}
@@ -190,7 +190,7 @@ public abstract class DragAdapter<T> extends BaseAdapter {
 	 * 关闭拖拽功能
 	 */
 	public void disableDrag() {
-		// TODO Auto-generated method stub
+		
 		mDraging = false;
 		notifyDataSetChanged();
 	}
