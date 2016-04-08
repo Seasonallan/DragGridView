@@ -16,7 +16,7 @@ import android.widget.GridView;
 
 /**
  * 拖动Gridview
- * @author ziv
+ * @author SeasonAllan
  * @param <T>
  *
  */
